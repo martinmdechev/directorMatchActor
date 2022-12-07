@@ -21,17 +21,13 @@ public class Main {
         films.add(f);
 
         match("Sunny");
-
-
     }
 
     public static void match(String director) {
         for (Film film : films) {
             if (film.getDirector().equals(director)) {
-                System.out.println(film.getTitle());
-                System.out.println(film.getLeadActor());
+                System.out.println(film.getTitle() + ", " + film.getLeadActor());
             }
-
         }
     }
 }
